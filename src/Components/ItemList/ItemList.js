@@ -1,4 +1,5 @@
 import classes from "./ItemList.module.css";
+import Item from "./Item";
 
 function ItemList() {
   const itens = [
@@ -17,12 +18,14 @@ function ItemList() {
   ];
   return (
     <div className={classes["item-list"]}>
-      {itens.map(item, (item) => {
-        <Item
+      {itens.map((item) => {
+        return <><Item
+          key={item.title}
           title={item.title}
           description={item.description}
-          amount={item.amount}
-        ></Item>;
+          price={item.price}
+        ></Item>
+        <hr/></>
       })}
     </div>
   );

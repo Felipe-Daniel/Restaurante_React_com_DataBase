@@ -16,6 +16,7 @@
   left: 25%;
   border-radius: 20px;
   padding: 2%;
+  margin-bottom: -180px;
 }
 @media screen and (max-width: 768px) {
   .block {

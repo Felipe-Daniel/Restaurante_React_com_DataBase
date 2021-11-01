@@ -1,13 +1,15 @@
+import classes from './InputInCart.module.css'
+
 function InputInCart() {
   return (
     <form>
-      <div>
-        <label>Amount: </label>
-        <input type="text" />
+      <div className={classes.amount}>
+        <label for='amount'>Amount: </label>
+        <input type="number" name='amount'/>
       </div>
-      <button type="submit" />
+      <button type="submit">+Add</button>
     </form>
-  );
+  )
 }
 
-export default InputInCart;
+export default InputInCart

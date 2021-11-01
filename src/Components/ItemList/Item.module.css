@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex:100% 1 0
+}
+.title{
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+.description{
+    font-style: italic;
+}
+.price{
+    color: rgb(197, 97, 25);
+    font-weight: bold;
+    font-size: 1.1em;
+}

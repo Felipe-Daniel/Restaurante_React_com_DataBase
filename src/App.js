@@ -1,10 +1,11 @@
 import Header from "./Components/Header/Header";
-import Nav from "./Components/Header/Nav/Nav";
+import ItemList from "./Components/ItemList/ItemList";
 
 function App() {
   return (
     <>
     <Header/>
+    <ItemList/>
     </>
   );
 }

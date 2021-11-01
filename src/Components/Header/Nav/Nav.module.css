@@ -5,6 +5,7 @@ nav {
   padding: 1% 0;
 }
 .logo {
+  cursor:default;
   color: #eee;
   font-weight: bolder;
   letter-spacing:-1px;
