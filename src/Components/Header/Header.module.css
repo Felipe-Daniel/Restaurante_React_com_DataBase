@@ -1,0 +1,32 @@
+.img {
+  background-image: url(../../imgs/meals.jpg);
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+  height: 300px;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+}
+.block {
+  background: #666;
+  color: #eee;
+  text-align: center;
+  width: 50%;
+  position: relative;
+  top: -200px;
+  left: 25%;
+  border-radius: 20px;
+  padding: 2%;
+}
+@media screen and (max-width: 768px) {
+  .block {
+      width: 80%;
+      left: 10%;
+  }
+  .block, .img{
+      display: none;
+  }
+}
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}

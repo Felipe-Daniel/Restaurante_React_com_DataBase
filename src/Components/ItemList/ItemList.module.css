@@ -1,0 +1,7 @@
+.item-list{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    background: #eee;
+    color: #333;
+}

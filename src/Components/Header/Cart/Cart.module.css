@@ -1,0 +1,24 @@
+.cart{
+    background-color: rgb(107, 23, 23);
+    color: #eee;
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding: 1% 2%;
+    white-space: nowrap;
+    font-size: 1.1em;
+    line-height: 1;
+    vertical-align:middle;
+}
+.cart >*{
+    margin-left: 10px;
+
+}
+.icon{
+    height: 1em;
+}
+.cart:hover{
+    background-color: rgb(107, 40, 40);
+}
