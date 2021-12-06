@@ -18,9 +18,9 @@ function ItemList() {
   ];
   return (
     <div className={classes["item-list"]}>
-      {itens.map((item) => {
+      {itens.map((item, id) => {
         return <><Item
-          key={item.title}
+          key={id}
           title={item.title}
           description={item.description}
           price={item.price}

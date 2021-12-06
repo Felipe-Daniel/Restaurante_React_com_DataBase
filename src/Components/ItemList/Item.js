@@ -8,7 +8,7 @@ function Item(props) {
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>${props.price}</div>
       </div>
-      <InputInCart/>
+      <InputInCart productName={props.title} price={props.price}/>
     </div>
   );
 }
