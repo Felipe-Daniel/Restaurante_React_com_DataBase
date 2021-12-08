@@ -6,14 +6,11 @@ function InputInCart(props) {
   const ctx = useContext(CartContext);
   function submitHandler(event) {
     event.preventDefault();
-    ctx.onAddProduct({
-      type: "ADD",
-      product: {
+    ctx.addProduct({
         productName: props.productName,
         price: props.price,
         amount: event.target.querySelector("input").value,
-      },
-    });
+      });
   }
   return (
     <form onSubmit={submitHandler}>
