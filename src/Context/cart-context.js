@@ -1,8 +1,8 @@
 import React, { useReducer } from "react";
 
 const CartContext = React.createContext({
-  addProductHandler: () => {},
-  removeProductHandler: () => {},
+  addProduct: () => {},
+  removeProduct: () => {},
   products: [],
   totalPrice: 0,
 });

@@ -1,15 +1,22 @@
 import React from "react";
+import classes from "./CartProduct.module.css";
 
-function CartProduct(props) {''
-    function removeProduct(){
-        props.onLiftRemoveProduct(props.name)
-    }
+function CartProduct(props) {
+  function onLiftPlusAmount(){
+      props.onLiftPlusAmount({productName: props.name, amount: +1})
+  }
+  function onLiftMinusAmount(){
+    props.onLiftMinusAmount({productName: props.name, amount: -1})
+  }
   return (
-    <div>
-      <div>{props.name}</div>
-      <div>{props.price}</div>
-      <div>{props.amount}</div>
-      <button onClick={removeProduct}>Remove</button>
+    <div className={classes.block}>
+      <div className={classes.product}>
+        <div className={classes.product__name}>{props.name}</div>
+        <div className={classes.product__price}>${props.price}</div>
+        <div className={classes.product__amount}>x {props.amount}</div>
+      </div>
+        <button className={classes.product__btn} onClick={onLiftPlusAmount}>+</button>
+        <button className={classes.product__btn} onClick={onLiftMinusAmount}>-</button>
     </div>
   );
 }
