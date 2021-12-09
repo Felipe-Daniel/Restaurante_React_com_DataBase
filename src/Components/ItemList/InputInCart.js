@@ -6,17 +6,19 @@ function InputInCart(props) {
   const ctx = useContext(CartContext);
   function submitHandler(event) {
     event.preventDefault();
-    ctx.addProduct({
+    if(!event.target.querySelector("input").value <0 || !event.target.querySelector("input").value >5){
+      ctx.addProduct({
         productName: props.productName,
         price: props.price,
         amount: event.target.querySelector("input").value,
       });
+    }
   }
   return (
     <form onSubmit={submitHandler}>
       <div className={classes.amount}>
         <label htmlFor="amount">Amount: </label>
-        <input type="number" name="amount" />
+        <input type="number" name="amount" min="0" max="5"/>
       </div>
       <button type="submit">+Add</button>
     </form>

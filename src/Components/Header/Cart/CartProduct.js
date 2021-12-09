@@ -3,17 +3,17 @@ import classes from "./CartProduct.module.css";
 
 function CartProduct(props) {
   function onLiftPlusAmount(){
-      props.onLiftPlusAmount({productName: props.name, amount: +1})
+      props.onLiftPlusAmount(props.product)
   }
   function onLiftMinusAmount(){
-    props.onLiftMinusAmount({productName: props.name, amount: -1})
+    props.onLiftMinusAmount(props.product)
   }
   return (
     <div className={classes.block}>
       <div className={classes.product}>
-        <div className={classes.product__name}>{props.name}</div>
-        <div className={classes.product__price}>${props.price}</div>
-        <div className={classes.product__amount}>x {props.amount}</div>
+        <div className={classes.product__name}>{props.product.productName}</div>
+        <div className={classes.product__price}>${props.product.price}</div>
+        <div className={classes.product__amount}>x {props.product.amount}</div>
       </div>
         <button className={classes.product__btn} onClick={onLiftPlusAmount}>+</button>
         <button className={classes.product__btn} onClick={onLiftMinusAmount}>-</button>

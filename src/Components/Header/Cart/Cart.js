@@ -14,7 +14,7 @@ function Cart() {
   }
   return (
     <>  
-      <div onClick={openModalHandler} className={classes.cart}><CartIcon className={classes.icon}/> Your Cart</div>
+      <div onClick={openModalHandler} className={classes.cart}><CartIcon className={classes.icon}/>&nbsp; Your Cart</div>
       {existModal && ReactDom.createPortal(
         <CartModal onCloseModal={closeModalHandler}></CartModal>,
         document.getElementById("cart_modal")

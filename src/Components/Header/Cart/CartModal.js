@@ -22,9 +22,7 @@ function CartModal(props) {
         <div className={classes.modal}>
         {ctx.products.map((product) => (
             <CartProduct
-            name={product.productName}
-            price={product.price}
-            amount={product.amount}
+            product={product}
             onLiftRemoveProduct={removeProductHandler}
             onLiftPlusAmount={plusAmountHandler}
             onLiftMinusAmount={minusAmountHandler}
@@ -32,7 +30,7 @@ function CartModal(props) {
         ))}
         <div className={classes.total_price}>
           <div>Total Price</div>
-          <div>{ctx.totalPrice}</div>
+          <div>${Math.round(ctx.totalPrice * 100) / 100}</div>
         </div>
         <div className={classes.buttons}>
           <button className={classes.buttons__close_button} onClick={props.onCloseModal}>Close</button>

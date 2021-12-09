@@ -9,7 +9,8 @@
 .product{
     display: flex;
     flex: 1 1 50%;
-    justify-content:left
+    justify-content:left;
+    align-items: center;
 }
 .product__name{
     font-weight: 800;
