@@ -6,11 +6,12 @@ function InputInCart(props) {
   const ctx = useContext(CartContext);
   function submitHandler(event) {
     event.preventDefault();
-    if(!event.target.querySelector("input").value <0 || !event.target.querySelector("input").value >5){
+    let amount = parseInt(event.target.querySelector("input").value)
+    if(amount > 0 && amount <=5){
       ctx.addProduct({
         productName: props.productName,
         price: props.price,
-        amount: event.target.querySelector("input").value,
+        amount: amount,
       });
     }
   }

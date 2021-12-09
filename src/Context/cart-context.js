@@ -14,17 +14,12 @@ function productsReducer(state, action) {
     const existingProductIndex = state.products.findIndex(
       (products) => action.product.productName === products.productName
     );
-    updatedTotalPrice = parseFloat(action.product.price) * parseFloat(action.product.amount) + state.totalPrice;
+    updatedTotalPrice = (parseFloat(action.product.price) * parseFloat(action.product.amount)) + state.totalPrice;
     
     let existingProduct = state.products[existingProductIndex];
     if (!existingProduct) {
       // if don't have yet
-      if (action.product.amount >0){
       updatedProducts = state.products.concat(action.product);
-      } else{
-        updatedProducts = [...state.products]
-        updatedTotalPrice = state.totalPrice
-      }
     } else {
       let newAmount =
         parseInt(action.product.amount) + parseInt(existingProduct.amount);

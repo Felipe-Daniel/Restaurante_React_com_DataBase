@@ -3,10 +3,10 @@ import classes from "./CartProduct.module.css";
 
 function CartProduct(props) {
   function onLiftPlusAmount(){
-      props.onLiftPlusAmount(props.product)
+      props.onLiftPlusAmount({productName: props.product.productName, price: props.product.price, amount: +1})
   }
   function onLiftMinusAmount(){
-    props.onLiftMinusAmount(props.product)
+    props.onLiftMinusAmount({productName: props.product.productName, price: props.product.price, amount: -1})
   }
   return (
     <div className={classes.block}>
