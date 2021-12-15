@@ -11,46 +11,13 @@
 .modal{
   position: fixed;
   left: 20%;
-  top: 20%;
+  top: 10%;
   width: 60%;
   background: #eee;
   padding: 2% 4%;
   border-radius: 10px;
-}
-.buttons{
-  display: flex;
-  justify-content: flex-end;
-}
-.buttons__close_button {
-  color: rgb(107,45, 23);
-  background-color: #eee;
-  padding: 1% 2%;
-  font-size: 1.3rem;
-  border-radius: 30px;
-  border: 1px solid rgb(107, 23, 23);
-  margin-top: 2%;
-}
-.buttons__close_button:hover {
-  background: #ddd;
-}
-.buttons__close_button:active {
-  background: #ccc;
-}
-.buttons__order_button {
-  color: #eee;
-  background-color: rgb(107, 23, 23);
-  padding: 1% 2%;
-  font-size: 1.3rem;
-  border-radius: 30px;
-  margin-top: 2%;
-  border: none;
-  margin-left: 2%;
-}
-.buttons__order_button:hover {
-  background: rgb(107, 40, 40);
-}
-.buttons__order_button:active {
-  background: rgb(107, 45,45);
+  overflow-y:auto;
+  bottom: 10%;
 }
 
 .total_price{

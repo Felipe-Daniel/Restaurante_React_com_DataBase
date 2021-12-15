@@ -37,13 +37,8 @@ function productsReducer(state, action) {
 
   }
   if(action.type === "REMOVE"){
-    const existingProductIndex = state.products.findIndex(
-      (products) => action.id === products.productName
-    );
-    updatedProducts = [...state.products];
-    updatedTotalPrice += -(updatedProducts[existingProductIndex].price *  updatedProducts[existingProductIndex].amount)
-      updatedProducts.splice(existingProductIndex, 1);
-
+    updatedProducts=[]
+    updatedTotalPrice=0
   }
 
   return {
@@ -64,13 +59,13 @@ export function CartContextProvider(props) {
   }
 
   function removeProductHandler(productName) {
-    dispatchProducts({ type: "REMOVE", id: productName });
+    dispatchProducts({ type: "REMOVE"});
   }
   const cartContext = {
     products: products.products,
     totalPrice: products.totalPrice,
     addProduct: addProductHandler,
-    removeProduct: removeProductHandler,
+    removeAllProducts: removeProductHandler,
   };
   return (
     <CartContext.Provider value={cartContext}>
