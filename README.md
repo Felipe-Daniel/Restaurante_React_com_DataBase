@@ -16,6 +16,7 @@ Com detalhes do pedido:
 ---
 ![Screenshot_2](https://user-images.githubusercontent.com/86571925/221684847-a6c4352a-f5f8-4398-b2c4-136de6ad4fc7.jpg)
 
----
+
 E por fim, tudo armazenado em uma DataBase:
+---
 ![screencapture-localhost-3000-2023-02-27-17_42_00](https://user-images.githubusercontent.com/86571925/221684079-0140cb62-cb00-4fe3-be1d-3fe925383dff.png)
