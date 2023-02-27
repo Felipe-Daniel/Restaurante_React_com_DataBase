@@ -19,4 +19,5 @@ Com detalhes do pedido:
 
 E por fim, tudo armazenado em uma DataBase:
 ---
-![screencapture-localhost-3000-2023-02-27-17_42_00](https://user-images.githubusercontent.com/86571925/221684079-0140cb62-cb00-4fe3-be1d-3fe925383dff.png)
+![Screenshot_4](https://user-images.githubusercontent.com/86571925/221686208-e08d175c-3972-45e2-ab93-3bd7292272da.jpg)
+
